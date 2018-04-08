@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>不定宽+自适应-float+overflow</title>
+  <style>
+  .left {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .right {
+    overflow: hidden;
+  }
+  .left p {
+    width: 200px;
+  }
+
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="left">
+      <p>
+        left
+      </p>
+    </div>
+    <div class="right">
+      <p>
+        right
+      </p>
+      <p>
+        right
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- 原理、用法
+
+原理：这种情况与两列定宽查不多。
+
+用法：先将左框设置为float:left、margin-right，再设置右框overflow: hidden，最后设置左框中的内容width。
+
+-->
+<!-- 优缺点
+
+优点：简单
+
+缺点：ie6下兼容性存在一定问题
+ -->

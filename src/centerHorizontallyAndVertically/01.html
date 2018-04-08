@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>absolute+transform</title>
+  <style>
+  .parent {
+    position: relative;
+  }
+
+  .child {
+    position: absolute;
+    left: 50 %;
+    top: 50 %;
+    transform: tranplate(- 50 %, - 50 %);
+  }
+
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="child">DEMO</div>
+  </div>
+</body>
+
+</html>
+<!-- 原理、用法
+
+原理：将水平居中时的absolute+transform和垂直居中时的absolute+transform相结合。详见：水平居中的3）和垂直居中的2）。
+
+见水平居中的3）和垂直居中的2）。
+
+-->
+<!-- 优缺点
+
+优点：child元素不会对其他元素产生影响
+
+缺点：兼容性存在一定问题
+
+ -->

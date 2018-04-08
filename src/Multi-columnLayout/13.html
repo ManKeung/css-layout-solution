@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>等分布局-flex</title>
+  <style>
+  .parent {
+    display: flex;
+  }
+
+  .column {
+    flex: 1;
+  }
+
+  .column+.column {
+    margin-left: 20px;
+  }
+
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="column">
+      <p>
+        1
+      </p>
+    </div>
+    <div class="column">
+      <p>
+        2
+      </p>
+    </div>
+    <div class="column">
+      <p>
+        3
+      </p>
+    </div>
+    <div class="column">
+      <p>
+        4
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- 原理、用法
+
+原理：通过设置CSS3布局利器flex中的flex属性以达到等分布局。
+
+用法：将父框设置为display: flex，再设置子框flex: 1，最后设置子框与子框的间距margin-left。
+-->
+<!-- 优缺点
+
+优点：代码量少，与块数无关
+
+缺点：兼容性存在一定问题
+ -->
+<!-- 公式转化：看images
+
+l=w*n+g*(n-1)->l=w*n+g*n-g->l+g=（w+g）*n
+
+因此，我们需要解决两个问题：
+
+如何让总宽度增加g(即：L+g)
+
+如何让每个宽包含g（即：w+g）
+
+ -->

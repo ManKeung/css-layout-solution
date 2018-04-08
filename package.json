@@ -1,0 +1,16 @@
+{
+  "name": "css-layout-solution",
+  "version": "1.0.0",
+  "description": "css布局解决方案",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "layout",
+    "solution"
+  ],
+  "author": "mankeung",
+  "license": "ISC"
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>定宽自适应-flex</title>
+  <style>
+  .parent {
+    display: flex;
+  }
+
+  .left {
+    width: 100px;
+    margin-right: 20px;
+  }
+
+  .right {
+    flex: 1;
+  }
+
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="left">
+      <p>
+        left
+      </p>
+    </div>
+    <div class="right">
+      <p>
+        right
+      </p>
+      <p>
+        right
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- 原理、用法
+
+原理：通过设置CSS3布局利器flex中的flex属性以达到多列布局。
+
+用法：先将父框设置为display:flex，再设置左框flex:1，最后设置左框width、margin-right。
+
+-->
+<!-- 优缺点
+
+优点：flex很强大
+
+缺点：兼容性存在一定问题，性能存在一定问题
+ -->

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>inline-block+text-align+table-cell+vertical-align</title>
+  <style>
+  .parent {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .child {
+    display: inline -block;
+  }
+
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="child">DEMO</div>
+  </div>
+</body>
+
+</html>
+<!-- 原理、用法
+
+原理：使用inline-block+text-align水平居中，再用table-cell+vertical-align垂直居中，将二者结合起来。详见：水平居中的1）和垂直居中的1）。
+
+见水平居中的1）和垂直居中的1）。
+
+
+
+-->
+<!-- 优缺点
+
+优点：兼容性较好
+ -->
